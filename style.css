@@ -1,0 +1,532 @@
+body {
+    margin: 0;
+    min-height: 500vh;
+}
+
+ :root {
+    --ci1: #33658A;
+    --ci2: #86BBD8;
+    --ci3: #758E4F;
+    --ci4: #F6AE2D;
+    --ci5: #F26419;
+    --link: var(--ci1);
+    --link-hover: var(--ci2);
+    --btn-bg: var(--ci1);
+    --btn-bg-hover: var(--ci2);
+    --nav-link: var(--ci1);
+    --nav-hover: var(--ci2);
+    --bg-color: #fff;
+    --text-color: #333;
+    --box-shadow: 0 0 0 1px rgba(0, 0, 0, .04), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    --round: 5px;
+    --pmr-font: "Sukhumvit Set", -apple-system, BlinkMacSystemFont, "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --txt-font: var(--font-anuphan);
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    z-index: 10;
+    margin-bottom: 8vh;
+}
+
+#main_picture {
+    padding: 0 5em;
+    transform: scale(1);
+    transition: all 1.5s;
+}
+#div_main_pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    width: 100%;
+    height: 100vh;
+}
+
+#bg-sky {
+
+    background-image: url('https://cdn.discordapp.com/attachments/884624357899501649/901762603691429898/bg0.5.png'); 
+    /*hsl(195, 87%, 72%) */
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 3s;
+}
+
+.btn {
+    transition: .5s;
+}
+
+#groundWater {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    transition: all 3s;
+    z-index: 5;
+}
+
+#ground {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    bottom: 0%;
+    transition: all 3s;
+    z-index: 0;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.dialog {
+    z-index: 3;
+    color: #fff;
+    transition: 1s;
+    margin: auto;
+    margin-top: 57em;
+    text-align: center;
+}
+
+#description {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    opacity: 0;
+    transition: 2.5s;
+    text-shadow: 0px 2px 6px #0005;
+}
+
+div#text {
+    display: flex;
+    z-index: 2;
+    margin: auto;
+    margin-top: 10em;
+    height: 40%;
+    color: #fff;
+}
+
+div#intro {
+    z-index: 3;
+    margin: auto;
+    margin-top: 1em;
+    height: 60%;
+    opacity: 0;
+    transition: 2s;
+    color: #fff;
+}
+
+div#scroll {
+    text-align: center;
+    z-index: 7;
+    height: 40%;
+    opacity: 100;
+    transition: 2s;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#next_icon {
+    animation: fadeIn 1s infinite alternate;
+}
+
+div#text p {
+    color: #fff;
+}
+
+div#contain {
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 25%;
+    margin: auto;
+    margin-bottom: 10em;
+    z-index: 6;
+    height: 60%;
+    width: 950px;
+    justify-content: space-around;
+    align-items: center;
+    transition: 2s;
+}
+
+#final {
+    position: fixed;
+    opacity: 0;
+    transition: 2s;
+    z-index: -5;
+    display: none;
+}
+
+#text_restart {
+    position: fixed;
+    top: -85%;
+    left: 80%;
+    opacity: 0;
+    transition: 2s;
+}
+
+
+/* ---------------------------CLOID------------------------------- */
+
+#sky_obj {
+    position: absolute;
+    z-index: 1;
+    transition: 1.5s;
+}
+
+#cloud1 {
+    -webkit-transform: translateX(400px);
+    -webkit-animation: move 7s linear infinite;
+    display: block-inline;
+}
+
+#cloud2 {
+    -webkit-transform: translateX(520px);
+    -webkit-animation: move 12s linear infinite;
+    display: block-inline;
+}
+
+#center_text {
+    opacity: 0;
+    text-align: center;
+    margin-top: 10vh;
+    z-index: 7;
+    position: absolute;
+    top: 15%;
+    left: 14%;
+}
+
+#restart {
+    display: none;
+    transition: 3s;
+    top: 50%;
+    margin: 50px;
+}
+
+#LabelFinalSecond {
+    color: #444;
+}
+
+#all_page {
+    position: fixed;
+    width: 100%;
+}
+
+
+/* hsl(200, 71%, 66%); */
+
+#water {
+    background-color: hsl(230, 48%, 14%);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 180%;
+    background-position: 0% 100%;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: -100%;
+    transition: all 2s;
+    z-index: -1;
+}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform: translateX(1650px);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(-340px);
+        opacity: 0;
+    }
+}
+
+#skip {
+    position: fixed;
+    top: 94%;
+    left: 94%;
+}
+
+#all_char {
+    position: fixed;
+    top: 86%;
+    left: 44%;
+}
+
+#c_1 {
+    width: 200px;
+    left: 28%;
+    top: 80%;
+    position: fixed;
+    transition: 0.5s;
+}
+
+#c_2 {
+    width: 200px;
+    left: 35%;
+    top: 60%;
+    position: fixed;
+    transition: 0.5s;
+}
+
+#c_3 {
+    width: 200px;
+    position: fixed;
+    left: 20%;
+    top: 53%;
+    transition: 0.5s;
+}
+
+#c_4 {
+    width: 200px;
+    position: fixed;
+    left: 20%;
+    top: 40%;
+    transition: 0.5s;
+}
+
+#c_5 {
+    width: 200px;
+    position: fixed;
+    top: 35%;
+    left: 33%;
+    transition: 0.5s;
+}
+
+#c_6 {
+    width: 200px;
+    position: fixed;
+    top: 22%;
+    left: 40%;
+    transition: 0.5s;
+}
+
+#c_7 {
+    width: 200px;
+    position: fixed;
+    top: 12%;
+    left: 53%;
+    transition: 0.5s;
+}
+
+#c_8 {
+    width: 200px;
+    position: fixed;
+    top: 30%;
+    left: 60%;
+    transition: 0.5s;
+}
+
+#c_9 {
+    width: 200px;
+    position: fixed;
+    top: 50%;
+    left: 65%;
+    transition: 0.5s;
+}
+
+#c_10 {
+    width: 200px;
+    position: fixed;
+    top: 60%;
+    left: 80%;
+    transition: 0.5s;
+}
+
+#c_1:hover,
+#c_2:hover,
+#c_3:hover,
+#c_4:hover,
+#c_5:hover,
+#c_6:hover,
+#c_7:hover,
+#c_8:hover,
+#c_9:hover,
+#c_10:hover {
+    width: 250px;
+    transition: 0.5s;
+}
+
+#C_1,
+#C_2,
+#C_3,
+#C_4,
+#C_5,
+#C_6,
+#C_7,
+#C_8,
+#C_9,
+#C_10 {
+    cursor: pointer;
+}
+
+#scene_final {
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    transition: all 2s;
+}
+
+#info {
+    display: none;
+    position: fixed;
+    left: 20%;
+    top: 10%;
+    width: 1200px;
+    height: 600px;
+    z-index: 7;
+    background-color: #F7FBFE;
+    border-radius: 50px;
+}
+
+#div_img_info {
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    width: 400px;
+    text-align: center;
+}
+
+#div_img_info img {
+    margin-bottom: 15px;
+}
+
+#desc_info {
+    position: absolute;
+    left: 28%;
+    top: 13%;
+    width: 750px;
+    height: 430px;
+    padding: 15px;
+}
+
+#close_btn {
+    position: absolute;
+    left: 95%;
+    top: 5%;
+}
+
+#more_info {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 75%;
+    left: 45%;
+    z-index: 6;
+    opacity: 0;
+    transition: 2.5s;
+    text-shadow: 0px 2px 6px #0005;
+}
+
+#more_info label {
+    margin-right: 5px;
+}
+
+#summary {
+    display: none;
+    min-height: 90vh;
+    top: 3%;
+    left: 17%;
+    opacity: 1;
+    width: 100%;
+    position: fixed;
+}
+
+.sum_text {
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    /* text-align: center; */
+    z-index: 10;
+    /* margin-bottom: 8vh; */
+}
+
+
+/* ---------------------------CLOID------------------------------- */
+
+#main_picture.hid,
+#routeA.hid,
+#routeB.hid,
+#description.hid,
+#final.hid,
+#text_restart.hid {
+    transform: scale(0);
+}
+
+.show {
+    transform: scale(1);
+}
+
+.sum_container {
+    width: 100%;
+    margin: auto;
+}
+
+.pic {
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    background-color: #100f2b;
+}
+
+.pic_p {
+    width: 100%;
+    max-height: 100%;
+}
+
+.pic_m {
+    width: 100px;
+    height: 128px;
+    object-fit: cover;
+    object-position: 8% -5%;
+}
+
+.para {
+    text-align: left;
+    align-items: center;
+    display: flex;
+}
