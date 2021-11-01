@@ -5,7 +5,7 @@
 
 ลิงค์แบ่งเป็น 2 ส่วน
 1. ไฟล์เสียงประกอบเว็บเพียงอย่างเดียว       -->  https://drive.google.com/file/d/1vppSwsbnjc3qIax8e_p6adAPlMHwtvcC/view?usp=sharing  
-2. ไฟล์ทังหมดที่ผ่านการ zip เรียบร้อยแล้ว   -->  https://drive.google.com/file/d/1ci0ZWHjHHYMH27qBXeho6weEqXVhL8KJ/view?usp=sharing
+2. ไฟล์ทังหมดที่ผ่านการ zip เรียบร้อยแล้ว   -->  https://drive.google.com/file/d/1PXPzHCQtZoANlhvWXX7pdmI4nAnzFwaf/view?usp=sharing
 
 จุดขาย
 - เนื้อเรื่องสุดเร้าใจ
