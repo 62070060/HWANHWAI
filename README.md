@@ -1,7 +1,7 @@
 # H W A N H W A I
 
 ปัญหาที่พบ
-- ไฟล์มีขนาดใหญ์เกินจนไมสามารถอัพลง github ได้ ผมแก้ปัญหาโดยการอัพไฟล์ลง google drive ก่อนและนำลิงค์มาอัพลง github 
+- ไฟล์มีขนาดใหญ์เกินจนไม่สามารถอัพลง github ได้ ผมแก้ปัญหาโดยการอัพไฟล์ลง google drive ก่อนและนำลิงค์มาอัพลง github 
 
 ลิงค์แบ่งเป็น 2 ส่วน
 1. ไฟล์เสียงประกอบเว็บเพียงอย่างเดียว       -->  https://drive.google.com/file/d/1vppSwsbnjc3qIax8e_p6adAPlMHwtvcC/view?usp=sharing  
