@@ -11,27 +11,34 @@
 </head>
 
 <body onload="sizeimg()">
+
+    
+            <audio id='SEF'autoplay>
+        <source src="SEF.mp4" type="audio/mpeg">
+      </audio>
+      
     <div id="all_page">
+    
+
         <!-- ตกแต่งฉากบนฟ้า -->
         <div id="sky_obj">
             <div id="cloud1"><img src="https://cdn.discordapp.com/attachments/884624357899501649/884643779976515624/Pngtreehorror_ghost_ghost_1526798.png"style="width:150px"></div>
             <div id="cloud2"><img src="https://cdn.discordapp.com/attachments/884624357899501649/884643779976515624/Pngtreehorror_ghost_ghost_1526798.png"style="width:100px"></div>
-
         </div>
         <div class="container">
             <!-- พื้นหลังฉาก -->
             <div id="bg-sky"></div> 
             <div id="groundWater">
-                <img class="mySlides" id="img1" src="https://cdn.discordapp.com/attachments/884624357899501649/901764045974151168/bg2.png"><!-- ex1 โคลนดูด// -->
+                <img class="mySlides" id="img1" src="https://cdn.discordapp.com/attachments/884624357899501649/901764045974151168/bg2.png"><!-- ex1 โคลนดูด -->
             </div>
            <div id="ground">
-                <img class="mySlides" id="img2" src="https://cdn.discordapp.com/attachments/884624357899501649/901764045974151168/bg2.png"><!-- ex2 โคลนดูด2// -->
+                <img class="mySlides" id="img2" src="https://cdn.discordapp.com/attachments/884624357899501649/901764045974151168/bg2.png"><!-- ex2 โคลนดูด2 -->
                 <img class="mySlides" id="img3" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img4" src="https://cdn.discordapp.com/attachments/884624357899501649/901765234707017728/bg10.png"><!-- ex3 ฟ้าผ่า// -->
+                <img class="mySlides" id="img4" src="https://cdn.discordapp.com/attachments/884624357899501649/901765234707017728/bg10.png"><!-- ex3 ฟ้าผ่า -->
                 <img class="mySlides" id="img5" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img6" src="https://cdn.discordapp.com/attachments/884624357899501649/901762610318409778/bg2.2.png"><!-- ex4 ไฟ/ควัน// -->
+                <img class="mySlides" id="img6" src="https://cdn.discordapp.com/attachments/884624357899501649/901762610318409778/bg2.2.png"><!-- ex4 ไฟ/ควัน -->
                 <img class="mySlides" id="img7" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img8" src="https://cdn.discordapp.com/attachments/884624357899501649/901766766693343263/bg11.png"><!-- ex5 เหมือง// -->
+                <img class="mySlides" id="img8" src="https://cdn.discordapp.com/attachments/884624357899501649/901766766693343263/bg11.png"><!-- ex5 เหมือง -->
                 <img class="mySlides" id="img9" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
                 <img class="mySlides" id="img10" src="https://cdn.discordapp.com/attachments/884624357899501649/901770280605712394/bg12.png"><!-- ex6 เหมือง+เสือ -->
                 <img class="mySlides" id="img11" src="https://cdn.discordapp.com/attachments/884624357899501649/901762280604205076/bg4.png">
@@ -47,8 +54,10 @@
           <!-- หน้าปก -->
             <div id="intro" class="h1">
               <button class="btn_choice btn size-l " id="skip" onclick="skip()">skip!</button>
-              
+              <img id="OS" src="https://cdn.discordapp.com/attachments/878836466728456202/878844709362081802/unmute-g.png"style="width: 50px; margin-top: 20px;"onclick="document.getElementById('SEF').play()">
+              <img id="PS" src="https://cdn.discordapp.com/attachments/878836466728456202/878844709445980170/mute-r.png"style="width: 50px; margin-top: 20px;"onclick="document.getElementById('SEF').pause()">
                 <img src="https://cdn.discordapp.com/attachments/884624357899501649/884634786294022194/HwanHwai.png" id="logo">
+                
             </div>
             <div id="scroll" class="h6">
                 <b id='scroll_dialog'><b
@@ -297,6 +306,12 @@
                         </section>
                         <button class="btn_choice btn size-vl shadow sum_text" onclick="select_all()"
                             id="all_char">แผนที่การผจญภัย!</button>
+
+                        <a href="https://docs.google.com/document/d/1YUodnnYZuTnfdJ8bRBqsiisLRRrJ2PqrpEI7kSpeWFM/edit"target="_blank">
+                         <button class="btn_choice btn size-vl shadow sum_text" 
+                            id="all_text">ชมเนื้อเริ่องทั้งหมด</button>
+                        </a>
+                       
                     </div>
 
                 </div>

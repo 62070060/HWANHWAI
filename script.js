@@ -672,3 +672,6 @@ function select_all() {
 
     }, 500)
 }
+
+var SEF = document.getElementById('SEF')
+SEF.volume = 0.2;

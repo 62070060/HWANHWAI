@@ -280,11 +280,27 @@ div#contain {
     top: 94%;
     left: 94%;
 }
+#OS {
+    position: fixed;
+    top: 92%;
+    left: 90.5%;
+}
+#PS {
+    position: fixed;
+    top: 92%;
+    left: 87%;
+}
+
 
 #all_char {
     position: fixed;
     top: 86%;
-    left: 44%;
+    left: 30%;
+}
+#all_text {
+    position: fixed;
+    top: 86%;
+    left: 58%;
 }
 
 #c_1 {
