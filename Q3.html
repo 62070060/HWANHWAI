@@ -1,0 +1,92 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="Q3.css">
+        <script src="script.js"></script>
+        <title>H W A N H W A I</title>
+    </head>
+    <body>
+    
+      <div class="main">
+        <div id="menu" data-tog="-1">
+            <b style="color: red;">เลือก</b>เนื้อเรื่องที่คุณต้องการ<br>
+            <a href="index.html" class="next">Intro</a><br>
+            <a href="Q1.html" class="next">ด่านที่ 1 ทรายดูด/โคลนดูด</a><br>
+            <a href="Q2.html" class="next">ด่านที่ 2 ชะ...เชือก</a><br>
+            <a href="Q3.html" style="color: red;">ด่านที่ 3 ฟ้าผ่า</a><br>
+            <a href="Q4.html" class="next">ด่านที่ 4 ควันไฟ</a><br>
+            <a href="Q5.html" class="next">ด่านที่ 5 ไฟฟ้าสถิต</a><br>
+            <a href="Q6.html" class="next">ด่านที่ 6 คู่หูแม่ลูกเสือ</a><br>
+            <a href="Q7.html" class="next">ด่านที่ 7 เรือล่ม</a><br>
+            <a href="Q8.html" class="next">ด่านที่ 8 ฉลามโจมตีมนุษย์</a><br>
+            <a href="Q9.html" class="next">ด่านที่ 9 การระเบิดของภูเขาไฟ</a><br>
+            <a href="end.html" class="next">บทสรุป</a>
+        </div>
+           
+           <img src="https://cdn.discordapp.com/attachments/878836466728456202/878844710817517618/menu-w.png" class="next"
+           style="width: 5vw; cursor:pointer" onclick="menu.dataset.tog *= -1" id="bar">    
+        
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext1">
+                <b>“เอาหล่ะ นี่แค่ด่านแรก ต่อจากนี้น่าจะมีอะไรที่อันตราย...”</b><br> 
+                ครื้นนนนนนนนน
+                <a href="#id2"><img src="PIC/next.png" class="next"
+                    style=" position:absolute; width: 8vw; margin-top: 30vh; right: 5vw; cursor:pointer"></a>
+            </div>
+        </div>
+        <div class="fullscreen flex-center-parent"id="id2">
+            <div class="wctext2">
+                เสียงฟ้าร้องดังสนั่น คลื่นลมพัดแรงจนแทบทำให้ต้นไม้พังหักลงมาได้<br>
+                รุ่นพี่โตและคาสึยะทำท่าตื้นตะลึง
+                    <img src="https://cdn.discordapp.com/attachments/884624357899501649/899877345438085140/223.png" 
+                    style=" position:absolute; width: 20vw; margin-top: 80px; left: 40vw;">
+                    <a href="#id3"><img src="PIC/next.png" class="next"
+                        style=" position:absolute; width: 8vw; margin-top: 45vh; right: 5vw; cursor:pointer"></a>
+            </div>   
+        </div>
+        <div class="fullscreen flex-center-parent"id="id3">
+            <div class="wctext2" >
+                ทั้ง3คนออกวิ่งท่ามกลางคลื่นลมและฟ้าคลื้นคะนองเพื่อหาที่หลบ และที่ที่พวบเข้าไปหลบคือ? 
+                    <button class="button" onclick="ans.dataset.tog *= -1"
+                    style=" position:absolute; width: 20vw; margin-top: 20vh; left: 25vw;">หลบใต้ต้นไม้</button></a>
+
+                    <a href="Q4.html"><button class="button"
+                    style=" position:absolute; width: 20vw; margin-top: 20vh; left: 55vw;">หลบใต้บ้านผุพัง</button></a>
+                    
+                    <img src="PIC/READMORE.png" class="next"
+                    style="position:absolute; width: 5vw; margin-top: 40vh; left: 47vw; cursor:pointer " onclick="more.dataset.tog *= -1">
+                   
+                   
+                    <div id="ans" data-tog="-1">
+                        <b style="color: red;">เสียใจด้วยคุณไม่ได้ไปต่อ</b><br><br>
+                        โดยหลักการแล้ว สายฟ้า อาจฟาดลงมาได้ทุกจุด ไม่ว่าบนพื้นดิน ต้นไม้ หรือ บนอาคารสิ่งปลูกสร้างต่างๆ<br> 
+                        แต่ตามสถิติแล้ววัตถุหรือสิ่งต่างๆ ที่ อยู่สูงกว่าจะมีโอกาสที่จะถูกฟ้าผ่ามากกว่า ด้วยเหตุ นี้จึงห้ามหลบใต้ต้นไม้ใหญ่ในระหว่างที่เกิดฝนฟ้า คะนอง
+                            <button class="button" onclick="ans.dataset.tog *= -1"
+                            style=" position:absolute; width: 20vw; margin-top: 20vh; left: 40vw;">ตอบคำถามอีกครั้ง</button></a>
+                    </div>    
+                    
+                    <div id="more" data-tog="-1">
+                        <b>คุณรู้จัก รอย ซัลลิแวน รึเปล่า</b><br><br>
+                        <b>“เหตุการณ์ของ รอย ซัลลิแวน….ชายผู้โดนฟ้าผ่ามาแล้วถึง 7 ครั้ง แต่ก็ยังเอาชีวิตรอดมาได้!”</b><br>
+                        เขาเป็นเจ้าหน้าที่อุทยานแห่งชาติ ประจำอยู่อุทยานแห่งชาติเชนันโดอาห์ในรัฐเวอร์จิเนีย<br>
+                        เคยถูกฟ้าผ่ามาแล้วถึงเจ็ดครั้งในช่วงเวลาที่ต่างกัน ซึ่งสามารถรอดชีวิตมาได้ทุกครั้ง ด้วยเหตุนี้เขาจึงได้รับฉายา <b>"มนุษย์สายล่อฟ้า"</b><br> 
+                        เขาได้รับการยอมรับในบันทึกสถิติโลกกินเนสส์ในฐานะที่เคยได้รับอุบัติเหตุจากฟ้าผ่ามากกว่ามนุษย์คนอื่น ๆ และยังคงมีชีวิตอยู่!<br>
+                        <b>“แต่ว่าเขา..เสียชีวิตลงด้วยกระสุนของตัวเองในวัย 71 ปี อันเนื่องมาจากความรักที่ไม่สมปรารถนา..”</b>
+                            <img src="PIC/x.png" class="next"
+                            style="position:absolute; width: 10vw; margin-top: 20vh; left: 45vw; cursor:pointer " onclick="more.dataset.tog *= -1">
+                    </div>  
+                
+                   
+                   
+                   
+            </div>   
+        </div>
+
+    </div>
+    </body>
+    </html>

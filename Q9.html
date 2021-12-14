@@ -1,0 +1,91 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="Q9.css">
+        <script src="script.js"></script>
+        <title>H W A N H W A I</title>
+    </head>
+    <body>
+    
+      <div class="main">
+        <div id="menu" data-tog="-1">
+            <b style="color: red;">เลือก</b>เนื้อเรื่องที่คุณต้องการ<br>
+            <a href="index.html" class="next">Intro</a><br>
+            <a href="Q1.html" class="next">ด่านที่ 1 ทรายดูด/โคลนดูด</a><br>
+            <a href="Q2.html" class="next">ด่านที่ 2 ชะ...เชือก</a><br>
+            <a href="Q3.html" class="next">ด่านที่ 3 ฟ้าผ่า</a><br>
+            <a href="Q4.html" class="next">ด่านที่ 4 ควันไฟ</a><br>
+            <a href="Q5.html" class="next">ด่านที่ 5 ไฟฟ้าสถิต</a><br>
+            <a href="Q6.html" class="next">ด่านที่ 6 คู่หูแม่ลูกเสือ</a><br>
+            <a href="Q7.html" class="next">ด่านที่ 7 เรือล่ม</a><br>
+            <a href="Q8.html" class="next">ด่านที่ 8 ฉลามโจมตีมนุษย์</a><br>
+            <a href="Q9.html" style="color: red;">ด่านที่ 9 การระเบิดของภูเขาไฟ</a><br>
+            <a href="end.html" class="next">บทสรุป</a>
+        </div>
+           
+           <img src="https://cdn.discordapp.com/attachments/878836466728456202/878844710817517618/menu-w.png" class="next"
+           style="width: 5vw; cursor:pointer" onclick="menu.dataset.tog *= -1" id="bar">    
+        
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext1">
+                ทั้ง 3 ลอยมาที่เกาะแห่งหนี่ง แต่เอะ นั้นมัน ภูเขาไฟ…..กำลังจะปะทุด้วย
+                <a href="#id2"><img src="PIC/next.png" class="next"
+                    style=" position:absolute; width: 8vw; margin-top: 30.5vh; right: 5vw; cursor:pointer"></a>
+            </div>
+        </div>
+        <div class="fullscreen flex-center-parent"id="id2">
+            <div class="wctext1">
+                ตรงกลางเกาะมีวิหาร เราจะไปหลบที่นั้นกัน!
+                    <a href="#id3"><img src="PIC/next.png" class="next"
+                        style=" position:absolute; width: 8vw; margin-top: 30.5vh; right: 5vw; cursor:pointer"></a>
+            </div>   
+        </div>
+        <div class="fullscreen flex-center-parent"id="id3">
+            <div class="wctext2" >
+                ทั้ง 3 พุ่งทยานเข้าสู่วิหาร ทั้ง 3 ควรทำอย่างไรต่อเพื่อให้ปลอดภัยจากการปะทุของภูเขาไฟ?
+                    <button class="button" onclick="ans.dataset.tog *= -1"
+                    style=" position:absolute; width: 20vw; margin-top: 20vh; left: 25vw;">หาทางลงชั้นล่าง</button></a>
+
+                    <a href="end.html"><button class="button"
+                    style=" position:absolute; width: 20vw; margin-top: 20vh; left: 55vw;">ช่วยกันปิดประตู</button></a>
+                    
+                    <img src="PIC/READMORE.png" class="next"
+                    style="position:absolute; width: 5vw; margin-top: 40vh; left: 47vw; cursor:pointer " onclick="more.dataset.tog *= -1">                  
+                   
+                    <div id="ans" data-tog="-1">
+                        <b style="color: red;">เสียใจด้วยคุณไม่ได้ไปต่อ</b><br><br>
+                        ในเหตุภูเขาไฟปะทุ หากเราอยู่ในสิ่งปลูกสร้างไม่ว่าจะหลุมหลบภัยหรือบ้านพัก เราก็ควรที่จะมองหาและปิดประตู<br> 
+                        หน้าต่างให้สนิทเพื่อไม่ให้ควันไฟเข้ามาภายในเขตหลบภัย และการมองหาสิ่งที่มีความเป็นไปได้ว่าอาจมี<br> 
+                        หรือไม่มีอย่างทางลงใต้ดินนั้นผิดถนัด ในเหตุการณ์ถึงชีวิตเช่นนี้เราควรมองและตัดสินใจจากปัจจัยที่มีอยู่เป็นหลัก<br>
+                        มิใช่การคาดคะเนมั่วซั่ว
+                            <button class="button" onclick="ans.dataset.tog *= -1"
+                            style=" position:absolute; width: 20vw; margin-top: 20vh; left: 40vw;">ตอบคำถามอีกครั้ง</button></a>
+                    </div>    
+                    
+                    <div id="more" data-tog="-1">
+                        <b>คุณเคยได้ยินเรื่องเกี่ยวกับการระเบิดของภูเขาไฟแทมโบราไหม</b><br><br>
+                        <b>“การระเบิดของภูเขาไฟแทมโบรา เกาะซัมบาวา ประเทศอินโดนิเซีย”</b><br> 
+                        ความรุนแรงระดับ 7 มีความเสียหายอภิมหาพินาศ ส่งเสียงดังสนั่นหวั่นไหวไปทั่วสารทิศ<br> 
+                        ดังไกลไปถึงเกาะสุมาตรา ที่อยู่ไกลออกไป 1,930 กม. เถ้าถ่านหมอกปกคลุมทั่วท้องฟ้าจนมืดมิดอยู่นานสองวัน<br> 
+                        มีการประเมินกันว่า การระเบิดของแทมโบราเทียบเท่ากับระเบิดปรมาณู 6,000 ลูกระเบิดพร้อมกัน<br> 
+                        สภาวอากาศทั่วโลกแปรปรวนอย่างหนัก ยุโรป อเมริกาเหนือต้องตกอยู่ในสภาพไร้แสงแดดนานนับสัปดาห์<br> 
+                        กว่าที่ฝุ่นละอองจากแรงระเบิดนี้กว่าจะจางหายไปหมด ต้องใช้เวลาหลายปีกว่าจะตกลงสู่พื้น<br> 
+                        การสูญเสียชีวิตของมนุษย์ถึง 70,000 คน 
+                            <img src="PIC/x.png" class="next"
+                            style="position:absolute; width: 10vw; margin-top: 20vh; left: 45vw; cursor:pointer " onclick="more.dataset.tog *= -1">
+                    </div>  
+                
+                   
+                   
+                   
+            </div>   
+        </div>
+
+    </div>
+    </body>
+    </html>

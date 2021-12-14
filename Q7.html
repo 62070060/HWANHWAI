@@ -1,0 +1,92 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="Q7.css">
+        <script src="script.js"></script>
+        <title>H W A N H W A I</title>
+    </head>
+    <body>
+    
+      <div class="main">
+        <div id="menu" data-tog="-1">
+            <b style="color: red;">เลือก</b>เนื้อเรื่องที่คุณต้องการ<br>
+            <a href="index.html" class="next">Intro</a><br>
+            <a href="Q1.html" class="next">ด่านที่ 1 ทรายดูด/โคลนดูด</a><br>
+            <a href="Q2.html" class="next">ด่านที่ 2 ชะ...เชือก</a><br>
+            <a href="Q3.html" class="next">ด่านที่ 3 ฟ้าผ่า</a><br>
+            <a href="Q4.html" class="next">ด่านที่ 4 ควันไฟ</a><br>
+            <a href="Q5.html" class="next">ด่านที่ 5 ไฟฟ้าสถิต</a><br>
+            <a href="Q6.html" class="next">ด่านที่ 6 คู่หูแม่ลูกเสือ</a><br>
+            <a href="Q7.html" style="color: red;">ด่านที่ 7 เรือล่ม</a><br>
+            <a href="Q8.html" class="next">ด่านที่ 8 ฉลามโจมตีมนุษย์</a><br>
+            <a href="Q9.html" class="next">ด่านที่ 9 การระเบิดของภูเขาไฟ</a><br>
+            <a href="end.html" class="next">บทสรุป</a>
+        </div>
+           
+           <img src="https://cdn.discordapp.com/attachments/878836466728456202/878844710817517618/menu-w.png" class="next"
+           style="width: 5vw; cursor:pointer" onclick="menu.dataset.tog *= -1" id="bar">    
+        
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext1">
+                <b>“เหมือนเจ้าเสือนั้นจะไปแล้วน่ะ”</b> ทั้งสามรีบพุ่งตัวไปยังปลายสุดอุโมงค์<br> 
+                <b>“ดูนั้น”</b> พี่โตพูดพร้อมบันไดที่ค่อยๆทอดยาวสู่เรือสำราญ
+                <a href="#id2"><img src="PIC/next.png" class="next"
+                    style=" position:absolute; width: 8vw; margin-top: 27.5vh; right: 5vw; cursor:pointer"></a>
+            </div>
+        </div>
+        <div class="fullscreen2 flex-center-parent"id="id2">
+            <div class="wctext1">
+                หลังออกเรือไม่นาน โครมมมสะเก็ดขอวัตถุที่เรือชนพุ่งกระแทกหน้าไอซ์ <b>“นะ...น้ำแข็ง”</b> 
+                    <a href="#id3"><img src="PIC/next.png" class="next"
+                        style=" position:absolute; width: 8vw; margin-top: 30.5vh; right: 5vw; cursor:pointer"></a>
+            </div>   
+        </div>
+        <div class="fullscreen2 flex-center-parent"id="id3">
+            <div class="wctext2" >
+                เรือชนเข้ากับน้ำแข็ง บ้าแล้ว ภูเขาน้ำแข็ง ในเขตใกล้ป่าร้อนชื่นเนี่ยน่ะ!! เราทำไงกันดี
+                    <a href="Q8.html"><button class="button"
+                    style=" position:absolute; width: 20vw; margin-top: 20vh; left: 25vw;">รีบว่ายห่างจากเรือ</button></a>
+
+                    <button class="button" onclick="ans.dataset.tog *= -1"
+                    style=" position:absolute; width: 20vw; margin-top: 20vh; left: 55vw;">นี่คือเรือที่ไม่มีวันจม</button></a>
+                    
+                    <img src="PIC/READMORE.png" class="next"
+                    style="position:absolute; width: 5vw; margin-top: 40vh; left: 47vw; cursor:pointer " onclick="more.dataset.tog *= -1">
+                   
+                   
+                    <div id="ans" data-tog="-1">
+                        <b style="color: red;">เสียใจด้วยคุณไม่ได้ไปต่อ</b><br><br>
+                        จริงๆ แล้วสิ่งสำคัญที่จะทำให้คุณรอดชีวิตจากเหตุเรือล่ม ก็คือต้องตั้งสติก่อน คิดก่อนทำ หาอะไรที่ลอยน้ำได้<br>
+                        ก่อนที่เรือจม ให้รีบว่ายไปให้ไกลจากเรือที่สุด เพราะเมื่อเรือจมจะมีแรงดูดมหาศาลที่จะดึงเราลงไปทำให้จมน้ำได้<br>
+                            <button class="button" onclick="ans.dataset.tog *= -1"
+                            style=" position:absolute; width: 20vw; margin-top: 20vh; left: 40vw;">ตอบคำถามอีกครั้ง</button></a>
+                    </div>    
+                    
+                    <div id="more" data-tog="-1">
+                        <b>คุณเคยดูหนังเรื่องชู้รักเรือล่มหรือไม่</b><br><br>
+                        <b>“ไททานิกนี่ช่วง ปี 1912 สิน่ะ”</b><br> 
+                        ชนภูเขาน้ำแข็งระหว่างการเดินทางเที่ยวแรกจากเซาท์แทมป์ตัน สหราชอาณาจักร ไปนครนิวยอร์ก สหรัฐอเมริกา<br> 
+                        การจมของไททานิก ส่งผลให้มีผู้เสียชีวิต 1,514 ศพ นับเป็นภัยพิบัติทางทะเลในยามสงบครั้งที่มีผู้เสียชีวิตมากครั้งหนึ่งในประวัติศาสตร์<br> 
+                        ผู้โดยสารบนเรือล้วนแล้วแต่เป็นบรรดาบุคคลที่ร่ำรวยที่สุดในโลก ช่วงก่อนหน้าที่ไททานิกออกเดินทาง<br> 
+                        ได้เกิดเหตุไฟไหม้บริเวณส่วนเก็บถ่านหินที่ บล็อก 5 และ 6 และไฟยังไหม้ต่อเนื่องตลอดการเดินทาง<br> 
+                        ความเสียหายนั้นส่งผลให้ผนังกั้นนํ้าชั้นที่ 4 ก่อนถึงห้องเครื่อง และ ส่วนที่เก็บถ่านหินนั้นร้อนมาก<br> 
+                        อุณหภูมิไม่ตํ่ากว่า 1,500 ฟาเรนไฮต์ จนผนังกั้นนํ้าร้อนจนแดง และตัวเหล็กของผนังกั้นนํ้านั้นบิด งอ ลดการทนทานนํ้าไปกว่า 75%!!<br>
+                        
+                            <img src="PIC/x.png" class="next"
+                            style="position:absolute; width: 10vw; margin-top: 20vh; left: 45vw; cursor:pointer " onclick="more.dataset.tog *= -1">
+                    </div>  
+                
+                   
+                   
+                   
+            </div>   
+        </div>
+
+    </div>
+    </body>
+    </html>
