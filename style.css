@@ -1,0 +1,73 @@
+body{
+    font-family:sans-serif;
+}
+
+.tn{
+    font-size:calc(50vw / 40);
+}
+a{
+    font-size:calc(50vw / 40);
+}
+.wctext1{
+    font-size:calc(80vw / 40);
+    margin-top: 70vh;
+    text-align: center;
+    color: white;
+}
+.wctext2{
+    font-size:calc(80vw / 40);
+    text-align: center;
+    margin-top: 0vh;
+    color: white;
+}
+.wctext3{
+    font-size:calc(80vw / 40);
+    text-align: center;
+    margin-top: -20vh;
+    color: white;
+}
+.next:hover{
+    opacity: 0.6;
+    transition:0.5s;
+    transform: scale(1.2);
+  }
+
+.fullscreen{
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+    background-image: url('https://cdn.discordapp.com/attachments/884624357899501649/901702436522172466/bg0.4.png');
+    background-position: center;
+}
+.flex-center-parent{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+#menu{
+    display: block;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    box-sizing: border-box;
+    transition: all .3s;
+    font-size: calc(1vw + 1vh + 1vmin);
+    font-weight: 700;
+}
+#bar{
+    position: fixed;
+    right: 1em;
+    top: 1em;
+}
+[data-tog="1"]{
+        left: 0 !important;
+}
+
+#NuTz{
+    width: calc(100vw / 9);
+}
