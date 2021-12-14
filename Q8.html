@@ -13,6 +13,9 @@
     <body>
     
       <div class="main">
+        <audio id='SEF'>
+            <source src="PIC/SEF.mp3" type="audio/mpeg">
+        </audio>
         <div id="menu" data-tog="-1">
             <b style="color: red;">เลือก</b>เนื้อเรื่องที่คุณต้องการ<br>
             <a href="index.html" class="next">Intro</a><br>
@@ -26,6 +29,9 @@
             <a href="Q8.html" style="color: red;">ด่านที่ 8 ฉลามโจมตีมนุษย์</a><br>
             <a href="Q9.html" class="next">ด่านที่ 9 การระเบิดของภูเขาไฟ</a><br>
             <a href="end.html" class="next">บทสรุป</a>
+            <br><br>
+            <img id="OS" src="https://cdn.discordapp.com/attachments/878836466728456202/878844709362081802/unmute-g.png"style="width: 3.5vw; cursor:pointer"onclick="document.getElementById('SEF').play()">
+            <img id="PS" src="https://cdn.discordapp.com/attachments/878836466728456202/878844709445980170/mute-r.png"style="width: 3.5vw; cursor:pointer"onclick="document.getElementById('SEF').pause()">
         </div>
            
            <img src="https://cdn.discordapp.com/attachments/878836466728456202/878844710817517618/menu-w.png" class="next"
