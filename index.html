@@ -1,351 +1,93 @@
+
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://jabont.com/jayss/jayss2.css">
-    <title>H W A N H W A I</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-
-<body onload="sizeimg()">
-
-    
-            <audio id='SEF'autoplay>
-        <source src="SEF.mp4" type="audio/mpeg">
-      </audio>
-      
-    <div id="all_page">
-    
-
-        <!-- ตกแต่งฉากบนฟ้า -->
-        <div id="sky_obj">
-            <div id="cloud1"><img src="https://cdn.discordapp.com/attachments/884624357899501649/884643779976515624/Pngtreehorror_ghost_ghost_1526798.png"style="width:150px"></div>
-            <div id="cloud2"><img src="https://cdn.discordapp.com/attachments/884624357899501649/884643779976515624/Pngtreehorror_ghost_ghost_1526798.png"style="width:100px"></div>
-        </div>
-        <div class="container">
-            <!-- พื้นหลังฉาก -->
-            <div id="bg-sky"></div> 
-            <div id="groundWater">
-                <img class="mySlides" id="img1" src="https://cdn.discordapp.com/attachments/884624357899501649/901764045974151168/bg2.png"><!-- ex1 โคลนดูด -->
-            </div>
-           <div id="ground">
-                <img class="mySlides" id="img2" src="https://cdn.discordapp.com/attachments/884624357899501649/901764045974151168/bg2.png"><!-- ex2 โคลนดูด2 -->
-                <img class="mySlides" id="img3" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img4" src="https://cdn.discordapp.com/attachments/884624357899501649/901765234707017728/bg10.png"><!-- ex3 ฟ้าผ่า -->
-                <img class="mySlides" id="img5" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img6" src="https://cdn.discordapp.com/attachments/884624357899501649/901762610318409778/bg2.2.png"><!-- ex4 ไฟ/ควัน -->
-                <img class="mySlides" id="img7" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img8" src="https://cdn.discordapp.com/attachments/884624357899501649/901766766693343263/bg11.png"><!-- ex5 เหมือง -->
-                <img class="mySlides" id="img9" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img10" src="https://cdn.discordapp.com/attachments/884624357899501649/901770280605712394/bg12.png"><!-- ex6 เหมือง+เสือ -->
-                <img class="mySlides" id="img11" src="https://cdn.discordapp.com/attachments/884624357899501649/901762280604205076/bg4.png">
-                <img class="mySlides" id="img6" src="https://cdn.discordapp.com/attachments/884624357899501649/901771063711645740/bg13.png"><!-- ex7 เรือล่ม -->
-                <img class="mySlides" id="img12" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img13" src="https://cdn.discordapp.com/attachments/884624357899501649/901771063711645740/bg13.png"><!-- ex8 ภูเขาไฟ-->
-                <img class="mySlides" id="img14" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img15" src="https://cdn.discordapp.com/attachments/884624357899501649/901762280658722876/bg8.png"><!-- ex9 ภูเขาไฟ2 -->
-                <img class="mySlides" id="img16" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg">
-                <img class="mySlides" id="img17" src="https://cdn.discordapp.com/attachments/884624357899501649/902111976929501254/BG_C.jpg"><!-- ex10 สรุป-->
-
-            </div>
-          <!-- หน้าปก -->
-            <div id="intro" class="h1">
-              <button class="btn_choice btn size-l " id="skip" onclick="skip()">skip!</button>
-              <img id="OS" src="https://cdn.discordapp.com/attachments/878836466728456202/878844709362081802/unmute-g.png"style="width: 50px; margin-top: 20px;"onclick="document.getElementById('SEF').play()">
-              <img id="PS" src="https://cdn.discordapp.com/attachments/878836466728456202/878844709445980170/mute-r.png"style="width: 50px; margin-top: 20px;"onclick="document.getElementById('SEF').pause()">
-                <img src="https://cdn.discordapp.com/attachments/884624357899501649/884634786294022194/HwanHwai.png" id="logo">
-                
-            </div>
-            <div id="scroll" class="h6">
-                <b id='scroll_dialog'><b
-                        style="color: red;">เลื่อนเมาส์ลง</b>เพื่อเริ่มเนื้อเรื่องสุดเร้าใจ</b>
-                <img id="next_icon" src="https://cdn.discordapp.com/attachments/884624357899501649/884631801610510346/VvV.png" style="width: 50px; margin-top: 20px;">
-            </div>
-          <!-- เนื้อเรื่อง 1 -->
-            <div class="dialog">
-                <p class="h5">
-                    แปล็ก ตึบ! เสียงขาตั้งของรถชอปเปอร์ทั้ง3กระทบลงกับพื้นพร้อมชายรูปร่างกล้ามงาม<br>
-                    ผู้เป็นเจ้าของรถชอปเปอร์ทั้ง3เอียงตัวลงจากมอเตอร์ไซค์
-                </p>
-            </div>
-          <!-- เนื้อเรื่อง 2 -->
-            <div class="dialog page1">
-                <p class="h5">
-                    <b>“รุ่นพี่โต ใช่ที่นี่แน่เหรอครับ”</b> ชายผมทองผิวน้ำตาลเป็นมันวาว เอ่ยถาม<br>
-                    <b>“อา...ที่นี่แหละ ไม่ผิดแน่ ป่าอันธพาล”</b> ชายร่างสูงผิวเข้มโพกผ้าคาดหัวสีแดงเอ่ยตอบ
-                </p>
-                <img src="https://cdn.discordapp.com/attachments/884624357899501649/894228554936619018/katsy.png" style=" width:300px; margin-top: 20px; ">
-            </div>
-          <!-- เนื้อเรื่อง 3 -->
-            <div class="dialog page2">
-                <p class="h5">
-                    <b>“คาสึยะ รุ่นพี่โต มันจะดีแน่เหรอครับ ที่เรามาท้าทายสถานที่นี้หน่ะ”</b><br>
-                    ชายหนุ่มผมดำใส่เสื้อเชิ้ตเปิดหน้าอกพูดอย่างหวั่นไหว
-                </p>
-                <img src="https://cdn.discordapp.com/attachments/884624357899501649/894228216162689064/ice1.png" style="width:300px; margin-top: 20px; ">
-            </div>
-          <!-- เนื้อเรื่อง 4 -->
-            <div class="dialog page3">
-                <p class="h5">
-                    <b>“เห้ไอซ์ นายลืมแล้วเหรอว่าเรามาที่นี่กันทำไม ความเป็นชายไงไอซ์ เพื่อความเป็นชายอย่างแท้จริง!”</b><br>
-                    คาสึยะพูดตอบอย่างหนักแน่นพร้อมเอานิ้วชี้จิ้มที่หน้าอกของไอซ์เพื่อเป็นสัญลักษณ์บอก
-                </p>
-                <img src="https://cdn.discordapp.com/attachments/884624357899501649/894220133894062110/Pto.png" style="width:300px; margin-top: 20px; ">
-            </div>
-          <!-- เนื้อเรื่อง 5 -->
-            <div class="dialog page4">
-                <p class="h5">
-                    <b>“อย่าพึ่งทะเลาะกันสิเด็กๆ ค่ำคืนนี้เราต้องร่วมมือกัน”</b> รุ่นพี่โตเดินเข้ามาพร้อมโอบไหล่รุ่นน้องทั้งสอง<br>
-                    พร้อมพูดเสริม <b>“เราจะก้าวข้ามมัน เราจะก้าวข้ามป่านี้ เพื่อจะแสดงความเป็นชายและความเป็นพี่น้องของเรา3คน”</b>
-                </p>
-                <img src="https://cdn.discordapp.com/attachments/884624357899501649/894228000185389156/P_to_3P.png" style="width:300px; margin-top: 20px; ">
-            </div>
-          <!-- เนื้อเรื่อง 6 -->
-            <div class="dialog page5">
-                <p class="h5">
-                    ทั้ง3คนควงแขนกันพร้อมเบ่งกล้ามแน่นแล้วจึงเดินเข้าป่าอันธพาลอย่างองอาจ
-                </p>
-                <div id="water">
-                </div>
-            </div>
-          
-          
-          <!-- เนื้อเรื่อง + คำถาม -->
-            <div class="dialog page6" style="z-index: 34 ;">
-            
-            <b><label id="description" class="h6 cl-white">โคลนที่อยู่เบื้องล่างของรุ่นพี่โตดูดเขาลงไปอย่างรวดเร็ว“รุ่นพี่!! รีบวิ่งขึ้นมาเร็วเข้า” คาสึยะพูดอย่างตื่นตะหนกเราควรให้พี่โตทำอย่างไรดี
-                </label></b>
-            </div>
-            <div id="contain">
-                <button class="btn_choice btn size-vl shadow" onclick="changeImg(this)" id="routeA">ก้าวถอยหลังช้าๆ</button>
-                <div id="div_main_pic">
-
-                        <img class="character" id="main_picture" src="https://cdn.discordapp.com/attachments/884624357899501649/894264946169360384/Pto-c.png" alt="">
-                        <label id="text_main_pic" class="cl-red h7"
-                            style="display: none;"></label>
-                    </div>
-                    <button class="btn_choice btn size-vl shadow" onclick="changeImg(this)"
-                        id="routeB">รีบวิ่งอย่างรวดเร็ว</button>
-
-                    <div id="final">
-                        <img id="c_1" src="https://cdn.discordapp.com/attachments/884624357899501649/902144377177116672/1.png" onclick="select(this)">
-                        <img id="c_2" src="https://cdn.discordapp.com/attachments/884624357899501649/902144379156848650/2.png" onclick="select(this)">
-                        <img id="c_3" src="https://cdn.discordapp.com/attachments/884624357899501649/902144381014933544/3.png" onclick="select(this)">
-                        <img id="c_4" src="https://cdn.discordapp.com/attachments/884624357899501649/902144382461968404/4.png" onclick="select(this)">
-                        <img id="c_5" src="https://cdn.discordapp.com/attachments/884624357899501649/902144383284027392/5.png" onclick="select(this)">
-                        <img id="c_6" src="https://cdn.discordapp.com/attachments/884624357899501649/902144384735264808/6.png" onclick="select(this)">
-                        <img id="c_7" src="https://cdn.discordapp.com/attachments/884624357899501649/902144386438156328/7.png" onclick="select(this)">
-                        <img id="c_8" src="https://cdn.discordapp.com/attachments/884624357899501649/902144387792924692/8.png" onclick="select(this)">
-                        <img id="c_9" src="https://cdn.discordapp.com/attachments/884624357899501649/902144390603112458/9.png" onclick="select(this)">
-                        <img id="c_10" src="https://cdn.discordapp.com/attachments/884624357899501649/902145022617591818/0.png" onclick="select(this)">
-                    </div>
-                    <div class="cont-pd" id="summary">
-                        <section class="sum_container middle padding-vtc">
-                            <theboxes class="middle spacing -clip">
-                                <sp class="l"></sp>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_p" src="https://cdn.discordapp.com/attachments/884624357899501649/894264946169360384/Pto-c.png">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">โคลนดูด
-                                                    การเอาตัวรอดจากเหตุการณ์โคลนดูด โดยรวมแล้วคุณต้องตั้งสติ 
-                                                    ไม่ร้อนรน ค่อยๆขยับตัวอย่างระมัดระวังถ้าหากคุณโดนโคลนดูดเลยลำตัวแล้ว
-                                                     ให้คุณเอนตัวไปทางด้านหลัง แล้วจึงค่อยๆว่ายท่ากรรเชียงออกมาจากตำแหน่งโคลนดูด</span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_m" src="https://cdn.discordapp.com/attachments/884624357899501649/894617008707104839/city.png">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">การใช้เชือก
-                                                    การผูกเชือกเพื่อใช้ให้เป็นศูนย์เหนี่ยวนั้น เราควรเรียกวัตถุที่ผูกเป็นวัตถุที่มีความมั่นคง
-                                                     ตามเนื้อเรื่องนั้น ทุกตัวละครยืนอยู่บนดินโคลนของป่า ถึงแม้จะไม่ได้โดนโคลนดูด
-                                                     แต่การทรงตัวในสถานการณ์ที่ยืนอยู่บนโคลนนั้นข้อนข้างที่จะทำได้ยาก 
-                                                     ดังนั้นเราผูกเชือกเข้ากับสิ่งที่มีความมั่นคงสูง
-                                                </span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_p" src="https://cdn.discordapp.com/attachments/884624357899501649/899877345438085140/223.png">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">ฟ้าผ่า
-                                                    โดยหลักการแล้ว สายฟ้า อาจฟาดลงมาได้ทุกจุด ไม่ว่าบนพื้นดิน ต้นไม้ 
-                                                    หรือ บนอาคารสิ่งปลูกสร้างต่างๆ แต่ตามสถิติแล้ววัตถุหรือสิ่งต่างๆ 
-                                                    ที่อยู่สูงกว่าจะมีโอกาสที่จะถูกฟ้าผ่ามากกว่า ด้วยเหตุ นี้จึงห้ามหลบใต้ต้นไม้ใหญ่ในระหว่างที่เกิดฝนฟ้าคะนอง</span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_m" src="https://media.discordapp.net/attachments/884624357899501649/901803712685682769/dead.png?width=894&height=670">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt "> ควัน
-                                                    ถึงแม้คุณจะมีกล้ามเนื้อที่งดงามหรือบึกบึนเพียงใดแต่การที่คุณจะต่อยสสาร
-                                                    ที่ไม่มีกายเนื้อนั้นเป็นเรื่องที่ไม่สมควรและไม่ถูกต้องอย่างยิ่ง 
-                                                    เพราะสสารบางชนิดหากนำมือไปสัมผัสอาจเป็นอันตรายต่อผิวหนังและกล้ามเนื้อได้
-                                                </span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_p" src="https://cdn.discordapp.com/attachments/884624357899501649/901411668704231454/e219d37c98c8f0e9.png">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">ไฟฟ้าสถืต
-                                                    หากมีเพื่อนที่โดนไฟฟ้าสถิต เราจะสามารถแก้ได้ง่ายๆโดยการใช้ผ้าฝ้ายหรือพลาสติก
-                                                    ม้วนหรือปั้นให้เกิดมวลใช้ผ้าหรือพลาสติกห่อมือแล้วทำการพลักเพื่อนคนนั้นให้ออกจากบริเวณที่มีไฟฟ้าสถิต
-                                                </span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_m" src="https://cdn.discordapp.com/attachments/884624357899501649/901411651209801768/atk.png">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">เสิอโคร่ง
-                                                    การเจอเสือโคร่งนั้นถือว่าเป็นเรื่องหายาก โบราณไทยว่าไว้ว่าเป็นรางดี 
-                                                    แต่ถ้าหากคุณต้องประเชิญหน้าเข้ากับเสือโคร่งจริงๆแล้วหล่ะก็ 
-                                                    ให้คุณวิ่งเข้าใส่เจ้าเสือตัวนั้นพร้อมทำให้ร่างของคุณดูใหญ่และดุดันที่สุดเท่าที่จะทำได้!
-
-                                                </span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_p" src="https://media.discordapp.net/attachments/884624357899501649/901819815394680924/535.png?width=894&height=670">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">เริอล่ม
-                                                    จริงๆ แล้วสิ่งสำคัญที่จะทำให้คุณรอดชีวิตจากเหตุเรือล่ม ก็คือต้องตั้งสติก่อน 
-                                                    คิดก่อนทำ หาอะไรที่ลอยน้ำได้. ก่อนที่เรือจม ให้รีบว่ายไปให้ไกลจากเรือที่สุด 
-                                                    เพราะเมื่อเรือจมจะมีแรงดูดมหาศาลที่จะดึงเราลงไปทำให้จมน้ำได้
-                                                </span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_m" src="https://cdn.discordapp.com/attachments/884624357899501649/902123409239060540/2143c4e4006f5a78.png">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">ฉลาม
-                                                    โดยปกติแล้วฉลามจะไม่เข้ามาโจมตีมนุษย์ 
-                                                    เพราะมนุษย์เป็นสิ่งมีชีวิตที่รูปร่างน่ากลัวสำหรับฉลาม 
-                                                    แต่ในบางครั้งที่มนุษย์ตีเท้าว่ายน้ำในทะเลฉลามก็เข้ามาจู่โจมเพราะคิดว่านั้นเป็นพฤติกรรมของปลาขนาดเล็กที่ว่ายหนีตน
-                                                </span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_p" src="https://media.discordapp.net/attachments/884624357899501649/901833434400456774/1515.png?width=894&height=670">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">ภูเขาไฟระเบิด
-                                                    ในเหตุภูเขาไฟปะทุ หากเราอยู่ในสิ่งปลูกสร้างไม่ว่าจะหลุมหลบภัยหรือบ้านพัก 
-                                                    เราก็ควรที่จะมองหาและปิดประตู หน้าต่างให้สนิทเพื่อไม่ให้ควันไฟเข้ามาภายในเขตหลบภัย 
-                                                    และการมองหาสิ่งที่มีความเป็นไปได้ว่าอาจมี หรือไม่มีอย่างทางลงใต้ดินนั้นผิดถนัด 
-                                                </span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                                <box col="6" mob="12">
-                                    <div style="display: inline-block;">
-                                        <inner class="bg-white cl-grey-9 round shadow" style="display:flex;">
-                                            <div class="pic">
-                                                <img class="pic_m" src="https://cdn.discordapp.com/attachments/884624357899501649/894228000185389156/P_to_3P.png">
-                                            </div>
-                                            <div class="para" style="margin-left: 20px;">
-                                                <span class="padding-l-hzt ">สรุป
-                                                    เหตุการณ์ที่เกิดขึ่นในอดีตล้วนเป็นสิ่งกระตุ่นเพื่อให้มนุษย์ได้ตระหนักและเรียนรู้ที่พัฒนาและหาทางป้องกันเพื่อไม่ให้เกินหรือลดความสูญเสียที่เกิดขึ้นให้ได้มากที่สุด</span>
-                                            </div>
-                                        </inner>
-                                    </div>
-                                </box>
-                            </theboxes>
-                        </section>
-                        <button class="btn_choice btn size-vl shadow sum_text" onclick="select_all()"
-                            id="all_char">แผนที่การผจญภัย!</button>
-
-                        <a href="https://docs.google.com/document/d/1YUodnnYZuTnfdJ8bRBqsiisLRRrJ2PqrpEI7kSpeWFM/edit"target="_blank">
-                         <button class="btn_choice btn size-vl shadow sum_text" 
-                            id="all_text">ชมเนื้อเรื่องทั้งหมด</button>
-                        </a>
-                       
-                    </div>
-
-                </div>
-                <div class="centered">
-                    <button class="btn_choice btn size-l shadow" onclick="restart()" id="retry"
-                        style="display: none;">เริ่มใหม่อีกที</button>
-                    <button class="btn_choice btn size-l shadow" onclick="location.reload()" id="restart"
-                        style="display: none;">กลับไปจุดเริ่มต้น</button>
-                </div>
-
-                <div id="more_info">
-                    <div style="display: flex;">
-                        <label id="type_info" class="cl-white size-vl">ทรายดูด/โคลนดูด</label>
-                        <img onclick="close_info()" src="https://cdn.discordapp.com/attachments/884624357899501649/894586824855552020/123.png"style="width:40px">
-                    </div>
-                    <div><label id="age" class="cl-white size-l" for="">(ประวัติ ความหมาย และหลักการของโคลนดูด)</label>
-                    </div>
-                </div>
-                <div id="info" style="z-index: 43 ;">
-                    <div id="div_img_info"><img id="img_info" src="https://cdn.discordapp.com/attachments/884624357899501649/894586413243305984/mud.png"><label id="type_this_info"
-                            class="h8">โคลนดูด</label></div>
-                    <div id="desc_info">
-                        <label class="h8" id="text_info">'นายรู้จักศาสตราจารย์แดเนียล บอนน์รึป่าว' รุ่นพี่โตพูดขึ้น<br><br>
-                            'ศาสตราจารย์และทีมงาน ได้ศึกษาทดลองเกี่ยวกับเหตุการณ์ทรายดูด มันมีลักษณะเป็นบ่อ ด้านบนเป็นทรายหรือดินที่ละเอียดเป็นเม็ดๆ 
-                            ส่วนด่านล่างมีชั้นของน้ำแทรกอยู่ เมื่อทรายหรือดินด้านบนแห้งก็จะไม่ยืดหยุ่น มีความแข็งแรงพอที่จะเดินผ่านไปได้ 
-                            แต่หากชั้นน้ำที่อยู่ด้านใต้เกิดแทรกซึมขึ้นมาที่ทรายหรือดินด้านบน จะเกิดความยืดหยุ่น หรือลื่นไหลจนเป็นของเหลว 
-                            ทำให้เมื่อเดินไปเหยียบแล้วจะเกิดการยุบตัวลง ร่างกายของเราจึงหล่นตามลงไปด้วย  หากเรายิ่งดิ้นรนหรือตะเกียกตะกายขึ้นมาจากบ่อทรายดูด 
-                            แรงที่เราดิ้นจะยิ่งทำให้ตัวของเราจมลง แต่หากเราปล่อยตัวนิ่งๆ ความหนาแน่นของร่างกายเราจะน้อยกว่าความหนาแน่นของบ่อทราย ทำให้ร่างกายเราลอยขึ้นได้เอง'</label>
-                    </div>
-                    <div id="close_btn" onclick="close_info()"><img src="https://cdn.discordapp.com/attachments/884624357899501649/894587063251398656/x.png"style="width:40px"></div>
-                </div>
-            </div>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
-</body>
+        <title>H W A N H W A I</title>
+    </head>
+    <body>
+    
+      <div class="main">
+        <div id="menu" data-tog="-1">
+            <b style="color: red;">เลือก</b>เนื้อเรื่องที่คุณต้องการ<br>
+            <a href="index.html" style="color: red;">Intro</a><br>
+            <a href="Q1.html" class="next">ด่านที่ 1 ทรายดูด/โคลนดูด</a><br>
+            <a href="Q2.html" class="next">ด่านที่ 2 ชะ...เชือก</a><br>
+            <a href="Q3.html" class="next">ด่านที่ 3 ฟ้าผ่า</a><br>
+            <a href="Q4.html" class="next">ด่านที่ 4 ควันไฟ</a><br>
+            <a href="Q5.html" class="next">ด่านที่ 5 ไฟฟ้าสถิต</a><br>
+            <a href="Q6.html" class="next">ด่านที่ 6 คู่หูแม่ลูกเสือ</a><br>
+            <a href="Q7.html" class="next">ด่านที่ 7 เรือล่ม</a><br>
+            <a href="Q8.html" class="next">ด่านที่ 8 ฉลามโจมตีมนุษย์</a><br>
+            <a href="Q9.html" class="next">ด่านที่ 9 การระเบิดของภูเขาไฟ</a><br>
+            <a href="end.html" class="next">บทสรุป</a>
+        </div>
+           
+           <img src="https://cdn.discordapp.com/attachments/878836466728456202/878844710817517618/menu-w.png" class="next"
+           style="width: 5vw; cursor:pointer" onclick="menu.dataset.tog *= -1" id="bar">    
+        
+        <div class="fullscreen flex-center-parent">
+            <img src="https://cdn.discordapp.com/attachments/884624357899501649/884634786294022194/HwanHwai.png" id="logo" 
+            style="position:absolute; width: 60vw;">
+            <div class="wctext1">
+                <b style="color: red;">เลื่อนเมาส์ลง</b>เพื่อเริ่มเนื้อเรื่องสุดเร้าใจ   
+            </div> 
+            <img id="next_icon" src="https://cdn.discordapp.com/attachments/884624357899501649/884631801610510346/VvV.png" 
+            style="position:absolute; width: 50px;  top: 90vh;">
+        </div>
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext2">
+                แปล็ก ตึบ! เสียงขาตั้งของรถชอปเปอร์ทั้ง3กระทบลงกับพื้นพร้อมชายรูปร่างกล้ามงาม<br>
+                    ผู้เป็นเจ้าของรถชอปเปอร์ทั้ง3เอียงตัวลงจากมอเตอร์ไซค์
+            </div>
+        </div>
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext3">
+                <b>“รุ่นพี่โต ใช่ที่นี่แน่เหรอครับ”</b> ชายผมทองผิวน้ำตาลเป็นมันวาว เอ่ยถาม<br>
+                    <b>“อา...ที่นี่แหละ ไม่ผิดแน่ ป่าอันธพาล”</b> ชายร่างสูงผิวเข้มโพกผ้าคาดหัวสีแดงเอ่ยตอบ
+                    <img src="https://cdn.discordapp.com/attachments/884624357899501649/894228554936619018/katsy.png" 
+                    style=" position:absolute; width: 20vw; margin-top: 80px; left: 40vw;">
+            </div>   
+        </div>
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext3">
+                <b>“คาสึยะ รุ่นพี่โต มันจะดีแน่เหรอครับ ที่เรามาท้าทายสถานที่นี้หน่ะ”</b><br>
+                    ชายหนุ่มผมดำใส่เสื้อเชิ้ตเปิดหน้าอกพูดอย่างหวั่นไหว
+                    <img src="https://cdn.discordapp.com/attachments/884624357899501649/894228216162689064/ice1.png" 
+                    style=" position:absolute; width: 20vw; margin-top: 80px; left: 40vw;">
+            </div>   
+        </div>
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext3">
+                <b>“เห้ไอซ์ นายลืมแล้วเหรอว่าเรามาที่นี่กันทำไม ความเป็นชายไงไอซ์ เพื่อความเป็นชายอย่างแท้จริง!”</b><br>
+                    คาสึยะพูดตอบอย่างหนักแน่นพร้อมเอานิ้วชี้จิ้มที่หน้าอกของไอซ์เพื่อเป็นสัญลักษณ์บอก
+                    <img src="https://cdn.discordapp.com/attachments/884624357899501649/894220133894062110/Pto.png" 
+                    style=" position:absolute; width: 20vw; margin-top: 80px; left: 40vw;">
+            </div>   
+        </div>
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext3">
+                <b>“อย่าพึ่งทะเลาะกันสิเด็กๆ ค่ำคืนนี้เราต้องร่วมมือกัน”</b><br>
+                รุ่นพี่โตเดินเข้ามาพร้อมโอบไหล่รุ่นน้องทั้งสอง พร้อมพูดเสริม<br>
+                    <b>“เราจะก้าวข้ามมัน เราจะก้าวข้ามป่านี้ เพื่อจะแสดงความเป็นชายและความเป็นพี่น้องของเรา3คน”</b>
+                    <img src="https://cdn.discordapp.com/attachments/884624357899501649/894228000185389156/P_to_3P.png" 
+                    style=" position:absolute; width: 20vw; margin-top: 80px; left: 40vw;">
+            </div>   
+        </div>
+        <div class="fullscreen flex-center-parent">
+            <div class="wctext3">
+                ทั้ง3คนควงแขนกันพร้อมเบ่งกล้ามแน่นแล้วจึงเดินเข้าป่าอันธพาลอย่างองอาจ
+                <a href="Q1.html"><img src="PIC/next.png" class="next"
+                    style=" position:absolute; width: 20vw; margin-top: 80px; left: 40vw; cursor:pointer"></a>
+            </div>   
+        </div>
 
-</html>
+      </div>
+      
+    </body>
+    </html>
